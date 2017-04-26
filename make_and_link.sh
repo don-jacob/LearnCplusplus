@@ -11,3 +11,6 @@ g++ -o C2_unintialized_variables C2_unintialized_variables.o
 
 g++ -c C2_cin_cout_ex.cpp
 g++ -o C2_cin_cout_ex C2_cin_cout_ex.o
+
+g++ -c C2_functions.cpp
+g++ -o C2_functions C2_functions.o
