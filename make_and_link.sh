@@ -14,3 +14,12 @@ g++ -o C2_cin_cout_ex C2_cin_cout_ex.o
 
 g++ -c C2_functions.cpp
 g++ -o C2_functions C2_functions.o
+
+g++ -c C2_return_functions.cpp
+g++ -o C2_return_functions C2_return_functions.o
+
+g++ -c C2_getValueFromUser.cpp
+g++ -o C2_getValueFromUser C2_getValueFromUser.o
+
+g++ -c C2_FuncCallInsideAnotherFunc.cpp
+g++ -o C2_FuncCallInsideAnotherFunc C2_FuncCallInsideAnotherFunc.o
