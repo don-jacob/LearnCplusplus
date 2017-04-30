@@ -23,3 +23,6 @@ g++ -o C2_getValueFromUser C2_getValueFromUser.o
 
 g++ -c C2_FuncCallInsideAnotherFunc.cpp
 g++ -o C2_FuncCallInsideAnotherFunc C2_FuncCallInsideAnotherFunc.o
+
+g++ -c C2_FuncPassByValue.cpp
+g++ -o C2_FuncPassByValue C2_FuncPassByValue.o
