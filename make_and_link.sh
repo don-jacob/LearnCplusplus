@@ -26,3 +26,6 @@ g++ -o C2_FuncCallInsideAnotherFunc C2_FuncCallInsideAnotherFunc.o
 
 g++ -c C2_FuncPassByValue.cpp
 g++ -o C2_FuncPassByValue C2_FuncPassByValue.o
+
+g++ -c C2_FunctionPrototype.cpp
+g++ -o C2_FunctionPrototype C2_FunctionPrototype.o
