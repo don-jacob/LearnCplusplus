@@ -1,0 +1,21 @@
+Can I put function definitions in a header file?
+
+C++ won’t complain if you do, but generally speaking, you shouldn’t.
+
+As noted above, when you #include a file, the entire content of the included file is inserted at the point of inclusion. This means that any definitions you put in your header get copied into every file that includes that header.
+
+For small projects, this isn’t likely to be much of an issue. But for larger projects, this can make things take much longer to compile (as the same code gets recompiled each time it is encountered) and could significantly bloat the size of your executable. If you make a change to a definition in a code file, only that .cpp file needs to be recompiled. If you make a change to a definition in a header file, every code file that includes the header needs to be recompiled. One small change can cause you to have to recompile your entire project!
+
+Sometimes exceptions are made for trivial functions that are unlikely to change (e.g. where the function definition is one line).
+
+Header file best practices
+
+Here are a few best practices for creating your own header files.
+
+Always include header guards.
+Do not define variables in header files unless they are constants. Header files should generally only be used for declarations.
+Do not define functions in header files.
+Each header file should have a specific job, and be as independent as possible. For example, you might put all your declarations related to functionality A in A.h and all your declarations related to functionality B in B.h. That way if you only care about A later, you can just include A.h and not get any of the stuff related to B.
+Give your header files the same name as the source files they’re associated with (e.g. grades.h goes with grades.cpp).
+Try to minimize the number of other header files you #include in your header files. Only #include what is necessary.
+Do not #include .cpp files.

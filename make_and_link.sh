@@ -29,3 +29,7 @@ g++ -o C2_FuncPassByValue C2_FuncPassByValue.o
 
 g++ -c C2_FunctionPrototype.cpp
 g++ -o C2_FunctionPrototype C2_FunctionPrototype.o
+
+g++ C2_multi-file-program.cpp C2_add.cpp -o C2_multi-file-program
+
+g++ C2_program_using_header.cpp C2_add.cpp -o C2_program_using_header
